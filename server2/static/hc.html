@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<!--script src="https://code.jquery.com/jquery-3.6.0.min.js"></script-->
+<script src="jquery-3.6.0.min.js"></script>
+<!--script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script-->
+<script src="highstock.js"></script>
+<!--<script src="highcharts.js"></script-->
+<script src="exporting.js"></script>
+<script src="mychart.js"></script>
+</head>
+<body>
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<div id="load">
+  <form action="/loader" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file_proto" id="file_proto"> Protocol to load<br>
+  <input name="get" type="button" class="js-proto-upload" value="Load IT!">
+  <!--input name="get" type="submit" value="Load IT!" /-->
+  </form>
+</div>
+<!-- popups area -->
+<style> .popup:not(.open) { display: none; }</style>
+<div class="popup js-proto-upload-result">
+    <div>
+        <p>Протокол загружен.</p>
+        <a href="#" class="js-set-chart-uploaded">Показать</a>
+</div>
+</body>
+</html>

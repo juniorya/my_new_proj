@@ -1,0 +1,15 @@
+//
+//
+//
+
+#ifndef __CONFIG_H_20210701__
+#define __CONFIG_H_20210701__
+
+#define REG_ENDPOINT_ADDR  169.254.0.1
+
+#define REG_ENDPOINT_PORT  19191
+#define CTRL_ENDPOINT_ADDR  127.0.0.1
+#define CTRL_ENDPOINT_PORT  14433
+
+
+#endif /* __CONFIG_H_20210701__ */
